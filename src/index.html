@@ -6,15 +6,23 @@
     <title>Weather App</title>
   </head>
   <body>
-    <form action="">
-      <label for="search-bar" class="visually-hidden">Search</label>
-      <input type="search" name="q" id="search-bar" placeholder="Search..." />
-      <button type="submit">Submit</button>
-    </form>
+    <header>
+      <form action="">
+        <label for="search-bar" class="visually-hidden">Search</label>
+        <input type="search" name="q" id="search-bar" placeholder="Search..." />
+        <button type="submit">Submit</button>
+      </form>
 
-    <label class="toggle">
-      <input type="checkbox" id="unit-toggle" checked />
-      <span>°F</span>
-    </label>
+      <label class="toggle">
+        <input type="checkbox" id="unit-toggle" checked />
+        <span>°F</span>
+      </label>
+    </header>
+    <div id="error-message" class="error" hidden></div>
+    <div class="content">
+      <section class="current-conditions"></section>
+      <section class="alerts"></section>
+      <section class="week-forecast"></section>
+    </div>
   </body>
 </html>
